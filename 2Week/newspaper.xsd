@@ -1,0 +1,36 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.w3schools.com"
+	xmlns="http://www.w3schools.com" elementFormDefault="qualified">
+
+	<xs:element name="NEWSPAPER" type="NEWSPAPERTYPE" />
+
+	<xs:complexType name="NEWSPAPERTYPE">
+		<xs:sequence>
+			<xs:element name="ARTICLE" type="ARTICLETYPE" />
+			<xs:element name="NEWSPAPERS" type="xs:string"
+				fixed="Vervet Logic Times" />
+			<xs:element name="PUBLISHER" type="xs:string"
+				fixed="Vervet Logic Press" />
+			<xs:element name="COPYRIGHT" type="xs:string"
+				fixed="Copyright 1998 Vervet Logic Press" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ARTICLETYPE">
+		<xs:sequence>
+			<xs:element name="HEADLINE" type="xs:string" />
+			<xs:element name="BYLINE" type="xs:string" />
+			<xs:element name="LEAD" type="xs:string" />
+			<xs:element name="BODY" type="xs:string" />
+			<xs:element name="NOTES" type="xs:string" />
+		</xs:sequence>
+		<xs:attribute name="AUTHOR" type="xs:string"
+			use="required" />
+		<xs:attribute name="EDITOR" type="xs:string"
+			use="required" />
+		<xs:attribute name="DATE" type="xs:date" use="required" />
+		<xs:attribute name="EDITION" type="xs:string"
+			use="required" />
+
+	</xs:complexType>
+</xs:schema>

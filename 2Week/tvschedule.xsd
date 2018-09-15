@@ -1,0 +1,53 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.w3schools.com"
+	xmlns="http://www.w3schools.com" elementFormDefault="qualified">
+
+
+	<xs:element name="TVSCHEDULE" type="TVSCHEDULETYPE" />
+
+	<xs:complexType name="TVSCHEDULETYPE">
+		<xs:sequence>
+			<xs:element name="CHANNEL" type="CHANNELTYPE" />
+		</xs:sequence>
+		<xs:attribute name="NAME" type="xs:string" use="required"></xs:attribute>
+	</xs:complexType>
+
+	<xs:complexType name="CHANNELTYPE">
+		<xs:sequence>
+			<xs:element name="BANNER" type="xs:string" />
+			<xs:element name="DAY" type="DAYTYPE" />
+		</xs:sequence>
+		<xs:attribute name="CHAN" type="xs:string" use="required"></xs:attribute>
+	</xs:complexType>
+
+	<xs:complexType name="DAYTYPE">
+		<xs:sequence>
+			<xs:element name="DATE" type="xs:date" />
+			<xs:choice minOccurs="1" maxOccurs="unbounded">
+				<xs:element name="HOLIDAY" type="xs:string"></xs:element>
+				<xs:element name="PROGRAMSLOT" type="PROGRAMSLOTTYPE"
+					minOccurs="1" maxOccurs="unbounded"></xs:element>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="PROGRAMSLOTTYPE">
+		<xs:sequence>
+			<xs:element name="TIME" type="xs:time"></xs:element>
+			<xs:element name="TITLE" type="TITLETYPE"></xs:element>
+			<xs:element name="DESCRIPTION" type="xs:string"
+				minOccurs="0" maxOccurs="1"></xs:element>
+		</xs:sequence>
+		<xs:attribute name="VTR" type="xs:string" use="optional"></xs:attribute>
+	</xs:complexType>
+
+	<xs:complexType name="TITLETYPE">
+		<xs:attribute name="RATING" type="xs:string"
+			use="optional" />
+		<xs:attribute name="LANGUAGE" type="xs:string"
+			use="optional" />
+	</xs:complexType>
+
+
+
+</xs:schema>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NEWSPAPER xmlns="http://www.w3schools.com"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.w3schools.com bulletin.xsd">
+	<ARTICLE AUTHOR="Sim" EDITOR="devsim" DATE="2018-09-13"
+		EDITION="1.0">
+		<HEADLINE>HEADLINE A</HEADLINE>
+		<BYLINE>BYLINE A</BYLINE>
+		<LEAD>LEAD A</LEAD>
+		<BODY>BODY A</BODY>
+		<NOTES>NOTE A</NOTES>
+	</ARTICLE>
+	<NEWSPAPERS />
+	<PUBLISHER />
+	<COPYRIGHT />
+</NEWSPAPER>

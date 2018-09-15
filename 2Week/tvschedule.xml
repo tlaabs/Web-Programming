@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TVSCHEDULE xmlns="http://www.w3schools.com" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.w3schools.com bulletin.xsd" NAME="NAME">
+	<CHANNEL CHAN="CHAN">
+		<BANNER>BANNER</BANNER>
+		<DAY>
+			<DATE>2014-04-23</DATE>
+			<HOLIDAY>SUN</HOLIDAY>
+			<PROGRAMSLOT VTR="VTR">
+				<TIME>06:00:00</TIME>
+				<TITLE RATING="5"></TITLE>
+				<DESCRIPTION>DESC</DESCRIPTION>
+			</PROGRAMSLOT>
+		</DAY>
+	</CHANNEL>
+</TVSCHEDULE>

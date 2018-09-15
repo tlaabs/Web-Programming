@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BOARD xmlns="http://www.w3schools.com" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.w3schools.com bulletin.xsd">
+	<ARTICLE>
+		<TITLE>TODAY IS ....</TITLE>
+		<MESSAGE>GOGO</MESSAGE>
+		<ID>DEVSIM</ID>
+		<NAME>SIMSEYONG</NAME>
+		<REPLY>
+			<MESSAGE>GOOD</MESSAGE>
+			<ID>TLATPDYD</ID>
+			<NAME>YONG2</NAME>
+		</REPLY>
+	</ARTICLE>
+
+	<ARTICLE>
+		<TITLE>TODAY IS ....</TITLE>
+		<MESSAGE>GOGO</MESSAGE>
+		<ID>DEVSIM</ID>
+		<NAME>SIMSEYONG</NAME>
+	</ARTICLE>
+
+</BOARD>
